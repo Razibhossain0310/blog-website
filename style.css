@@ -1,0 +1,493 @@
+/* reset code and common code start here  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    outline: 0;
+    font-weight: 400;
+}
+html{
+    scroll-behavior: smooth;
+    background-color: #fafafa;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #fff;
+    width: 120rem;
+    max-width: 100%;
+    margin: auto;
+    box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4,
+                0.1rem -0.1rem 0rem 0.1rem #c4c4c4;
+}
+/* reset code and common code ends here  */
+
+
+/* header start here  */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 2rem 1rem;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    min-height: 5vh;
+}
+.logo-figure{
+    border: .2rem solid white;
+}
+.logo{
+    font-size: 4rem;
+}
+nav li{
+    display: inline-block;
+    margin-right: 2rem;
+    transition: all .4s;
+    padding: 1rem;
+}
+nav li:last-child{
+    margin-right: 0;
+}
+nav li:hover{
+    background-color: #0d0d50;
+    border-radius: .5rem;
+}
+.nav-link{
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
+}
+/* header ends here  */
+
+/* banner section start here  */
+#banner-section{
+    padding: 5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+}
+.banner-header{
+    flex-basis: 50%;
+    margin: 1rem;
+    text-align: center;
+}
+.banner-header h1{
+    font-size: 6rem;
+    background-color: #141313;
+    border-radius: .4rem;
+    padding: 1rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    color: white;
+    font-family: 'Italianno', cursive;
+
+}
+.banner-header p{
+    text-align: justify;
+}
+.banner-img{
+    flex-basis: 50%;
+    margin-left: 1rem;
+}
+.banner-img img{
+    width: 50rem;
+    height: 50rem;
+    border: .2rem solid;
+}
+/* banner section ends here  */
+
+/* about me section start here  */
+#about-me{
+    background-color: #c4c4c4;
+    padding: 5rem 1rem;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.about-me{
+    text-align: center;
+    font-size: 7rem;
+    margin: 1rem;
+    font-family: 'Italianno', cursive;
+}
+.card{
+    display: flex;
+    align-items: center;
+}
+.card-body{
+    flex: 1;
+    border-radius: .4rem;
+    background-color: #a09d7d;
+    padding: 3rem 1rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform .4s;
+}
+.card-body:hover{
+    transform: scale(1.1);
+}
+.card-body h3{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    display: block;
+}
+.card-desc p{
+    font-size: 1rem;
+    text-align: justify;
+    padding: 2rem;
+}
+.btn{
+    text-align: center;
+    border: none;
+    border-radius: .5rem;
+    background-color: rgb(219, 216, 18);
+    padding:1rem;
+    align-self: center;
+    width: 60%;
+    font-size: 2rem;
+    box-shadow: 0.1rem 0.2rem 0.1rem #222;
+    cursor: pointer;
+}
+/* about me section ends here  */
+
+/* archives section start here  */
+#archives{
+    background-color: #3b3a3a;
+    padding: 5rem 1rem;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.archives-header{
+    text-align: center;
+    font-size: 7rem;
+    margin: 1rem;
+    font-family: 'Italianno', cursive;
+    color: white;
+}
+.archives-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+    border-bottom: 0.1rem solid white;
+    border-top: 0.1rem solid white;
+}
+.archives-container ul{
+    display: flex;
+    text-align: center;
+}
+.archives-container li{
+    margin: 1.5rem;
+}
+.archives-img{
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    transition: transform .4s;
+}
+.archives-img:hover{
+    transform: scale(1.1);
+}
+/* archives section ends here  */
+
+
+/* blog-post section start here  */
+#blog-post{
+    background-color: #c4c4c3;
+    padding: 5rem 1rem;
+    min-height: 95vh;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.blog-post-heading{
+    text-align: center;
+    font-size: 8rem;
+    margin: 1rem;
+    margin-bottom: 4rem;
+    font-family: 'Italianno', cursive;
+}
+.blog-posts{
+    width: 70%;
+    display: flex;
+    margin:2rem auto;
+    border:  1px solid #adaba6;
+    box-shadow: .1rem .1rem .2rem #7c7a7a;
+    border-radius: .5rem;
+    justify-content: space-evenly;
+    text-align: center;
+    transition: transform .5s;
+    background-color: white;
+}
+.blog-posts:hover{
+    transform: scale(1.1);
+}
+.blog-aside{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: .5rem;
+    flex: 1;
+}
+.blog-img{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.blog-article{
+    flex: 2;
+    padding: 2rem;
+    text-align: left;
+}
+.blog-article h3{
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+.blog-sub-heading{
+    font-size: 1.5rem;
+}
+.blog-article p{
+    margin: 1rem 0;
+    text-align: justify;
+}
+/* blog-post section ends here  */
+
+/* contact-section start here  */
+#contact{
+    min-height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5rem 1rem;
+    background-color: #444;
+    color: white;
+    flex-direction: column;
+}
+.contact-heading{
+    font-size: 7rem;
+    font-family: 'Italianno', cursive;
+    margin: 2rem;
+    text-align: center;
+}
+.contact-form{
+    border: .1rem solid black;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: .1rem .1rem .2rem #222;
+}
+.contact-info{
+    margin-bottom: 1.5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.contact-info label{
+    font-size: 1.5rem;
+    flex: 0.3;
+}
+input,textarea{
+    flex: 0.7;
+    width: 40rem;
+    font-size: 1.5rem;
+    padding: 2rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+textarea{
+    resize: none;
+    height: 12vh;
+}
+.contact-info2{
+    display: flex;
+    justify-content: flex-end;
+}
+.contact-btn{
+    width: 30%;
+    flex-direction: flex-end;
+}
+/* contact-section ends here  */
+
+
+/* footer section start here  */
+
+footer{
+    background-color: black;
+    color: #fff;
+    min-height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+
+}
+.copyright-text{
+    display: flex;
+    padding: .5rem;
+    font-size: 1.5rem;
+}
+.footer-icon{
+    font-size: 2rem;
+    padding: 1rem;
+    transition: all .5s;
+    border-radius: 50%;
+    background-color: #222;
+    margin: 0;
+}
+.footer-icon:hover{
+    background-color: #7c7a7a;
+    transform: scale(1.2);
+}
+footer nav li:hover{
+    background-color: transparent;
+}
+
+/* footer section ends here  */
+
+
+/* responsive design start here  */
+@media (max-width: 992px){
+    #banner-section{
+        flex-direction: column;
+        min-height: auto;
+    }
+    .banner-header{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        align-items: center;
+    }
+
+    .card{
+        flex-direction: column;
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .blog-posts{
+        width: 80%;
+    }
+    
+    
+}
+
+@media (max-width: 768px){
+    .banner-header{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        align-items: center;
+    }
+
+    .card{
+        width: 80%;
+    }
+
+    #archives{
+        min-height: auto;
+    }
+    .archives-container ul{
+        flex-wrap: wrap;
+    }
+    .blog-posts{
+        width: 90%;
+        flex-direction: column;
+    }
+    #contact{
+        min-height: auto;
+    }
+
+    footer nav li{
+        margin: auto;
+    }
+}
+
+@media (max-width: 600px){
+    header{
+        flex-direction: column;
+    }
+    .logo-figure{
+        margin-bottom: .7rem;
+    }
+    nav li{
+        display: block;
+        margin-right: 0;
+    }
+    .nav-link{
+        font-size: 1.2rem;
+        margin: 0;
+        padding: 0;
+    }
+    #banner-section{
+        min-height: auto;
+    }
+    .banner-img{
+        max-width: 100%;
+    }
+    #about-me{
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card{
+        width: 90%;
+    }
+    .blog-posts{
+        width: 95%;
+        min-height: auto;
+    }
+    .blog-posts:hover{
+        transform: none;
+    }
+    #contact{
+        min-height: auto;
+    }
+
+    .contact-form{
+        width: 90%;
+        margin: auto;
+    }
+    .contact-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-info label{
+        margin-bottom: 1rem;
+    }
+
+    footer{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .copyright-text{
+        margin: 1rem 0;
+    }
+    footer nav li{
+        display: inline-block;
+    }
+
+}
+
+/* responsive design ends here  */
